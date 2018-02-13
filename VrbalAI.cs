@@ -14,7 +14,7 @@ using IBM.Watson.DeveloperCloud.Connection;
 using System.IO;
 using FullSerializer;
 
-public class SoldierConvo : MonoBehaviour {
+public class VrbalAI : MonoBehaviour {
 
 	private int _recordingRoutine = 0;
 	private string _microphoneID = null;
