@@ -32,8 +32,14 @@ public class VrbalAI : MonoBehaviour {
 	private Dictionary<string, object> _context = null;
 	private bool stopListeningFlag = false;
 
+	float GSRDataAvg = 0f;
+
 	void Start()
 	{
+
+		GSRDataAvg = PlayerPrefs.GetFloat ("Data");
+		Debug.Log (GSRDataAvg + " " + "I'm here!");
+		
 		InitializeServices();
 		Debug.Log ("Hello");
 		//enter workspace_id as string, this kicks off the conversation
